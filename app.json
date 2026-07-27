@@ -3,15 +3,10 @@
     "name": "dotHealth",
     "slug": "dothealth",
     "version": "v1.1.3",
-    "sdkVersion": "54.0.0",
+    "sdkVersion": "57.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -24,7 +19,7 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.dotextension.dothealth",
-      "versionCode": 23
+      "versionCode": 24
     },
     "extra": {
       "eas": {
@@ -37,8 +32,17 @@
         "expo-build-properties",
         {
           "android": {
-            "targetSdkVersion": 35
+            "targetSdkVersion": 36
           }
+        }
+      ],
+      "expo-status-bar",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
         }
       ]
     ]
